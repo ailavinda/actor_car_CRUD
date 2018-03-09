@@ -1,0 +1,10 @@
+<%= form_for :actor, url: {action: "create"}, html: {class: "actor_new"} do |f| %>
+  Name: <%= f.text_field :name %>
+  <br />
+  Year Of Birth: <%= f.text_field :year_of_birth %>
+  <br />
+  Car Id: <%= f.text_field  :car_id %>
+  <br />
+  <br />
+  <%= f.submit "Do it" %>
+<% end %>

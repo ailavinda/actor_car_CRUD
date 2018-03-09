@@ -1,0 +1,21 @@
+<div>
+
+  <h1><%= @actor.name %></h1>
+  
+  <br />
+  
+  <div>
+
+    <ul>
+      <li><%= @actor.name %></li>
+      <li><%= @actor.year_of_birth %></li>
+      <li><%= @actor.car_id %></li>
+    </ul>
+
+  </div>
+
+  <p><%= link_to "Edit This Actor", edit_actor_path %></p>
+  
+  <p><%= link_to "Back To All Actors", actors_path %></p>
+
+</div>

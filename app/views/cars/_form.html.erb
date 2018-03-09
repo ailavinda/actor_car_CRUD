@@ -1,0 +1,10 @@
+<%= form_for :car, url: {action: "create"}, html: {class: "car_new"} do |f| %>
+  Manufacturer: <%= f.text_field :manufacturer %>
+  <br />
+  Model: <%= f.text_field :model %>
+  <br />
+  Year: <%= f.text_field  :year %>
+  <br />
+  <br />
+  <%= f.submit "Do it" %>
+<% end %>

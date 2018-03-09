@@ -1,0 +1,19 @@
+<div>
+
+  <h1>List Of All Actors</h1>
+  
+  <%= @actors.each do |actor| %>
+    <ul>
+      <li><%= link_to actor.name, actor_path(actor) %> <%= button_to "Delete Actor",  
+        actor_path(actor), method: :delete, data: {confirm: "Are you sure?" } %>
+
+    </ul>
+  <% end %>
+
+  <% if ( @actors.empty? ) %>
+    <p>No Actors Yet</p>
+  <% end %>
+
+  <p><%= link_to "Add New Actor", new_actor_path %></p>
+
+</div>

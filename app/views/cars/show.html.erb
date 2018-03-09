@@ -1,0 +1,21 @@
+<div>
+
+  <h1><%= @car.manufacturer %> <%= @car.model %></h1>
+  
+  <br />
+  
+  <div>
+
+    <ul>
+      <li><%= @car.manufacturer %></li>
+      <li><%= @car.model %></li>
+      <li><%= @car.year %></li>
+    </ul>
+
+  </div>
+
+  <p><%= link_to "Edit This Car", edit_car_path %></p>
+  
+  <p><%= link_to "Back To All Cars", cars_path %></p>
+
+</div>

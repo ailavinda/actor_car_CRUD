@@ -1,0 +1,19 @@
+<div>
+
+  <h1>List Of All Cars</h1>
+  
+  <%= @cars.each do |car| %>
+    <ul>
+      <li><%= link_to car.model, car_path(car) %> <%= button_to "Delete Car",  
+        car_path(car), method: :delete, data: {confirm: "Are you sure?" } %>
+
+    </ul>
+  <% end %>
+
+  <% if (@cars.empty?) %>
+    <p>No Cars Yet</p>
+  <% end %>
+
+  <p><%= link_to "Add New Car", new_car_path %></p>
+
+</div>
