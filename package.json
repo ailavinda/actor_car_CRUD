@@ -1,5 +1,7 @@
 {
   "name": "actor_car_CRUD",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "loofah": "0.0.7"
+  }
 }

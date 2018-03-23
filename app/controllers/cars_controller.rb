@@ -19,6 +19,7 @@ class CarsController < ApplicationController
     @car = Car.find(params[:id])
     @car.update!(car_params)
     # render json: car
+    redirect_to actors_path
   end
 
   def destroy 
@@ -33,4 +34,5 @@ class CarsController < ApplicationController
   def car_params
     params.require(:car).permit(:manufacturer, :model, :year )
   end
+
 end
